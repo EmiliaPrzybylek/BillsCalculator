@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8380cfc9ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>BillsCalculator</title>
+</head>
+
+<body>
+
+    <div class="logo-calc">
+        <h1>Bill<i class="fas fa-dollar-sign"></i>Calculator</h1>
+    </div>
+
+    <section class="section-calc">
+        <div class="box-calc">
+            <div class="top-box">
+                <p>Oblicz napiwek i resztę</p>
+            </div>
+            <div class="main-box">
+                <form>
+                    <label for="price">Rachunek do zapłaty:</label>
+                    <input type="number" id="price">
+                    <label for="tip">Wielkość napiwku:</label>
+                    <input type="number" id="tip">
+                    <div class="buttons">
+                        <button type="submit">Oblicz</button>
+                        <input class="reset" type="reset" value="Reset"><br>
+                    </div>
+                    <div class="result">Do zapłaty</div>
+                </form>
+            </div>
+        </div>
+  
+    </section>
+
+    <div class="copyright">&copy; Emilia Przybyłek</div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
