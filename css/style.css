@@ -156,7 +156,22 @@ body {
     }
 
     .box-calc {
-        width: 200px;
+        width: 290px;
+    }
+
+    .copyright {
+        text-align: center;   
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .logo-calc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-calc {
+        width: 500px;
     }
 
     .copyright {
