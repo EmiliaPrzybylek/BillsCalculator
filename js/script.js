@@ -10,13 +10,17 @@ const resultPlaceBill = document.querySelector('.result-bill');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const countTip = parseFloat(price.value) * (parseInt(tip.value) / 100);
+    const delayResult = setTimeout(delaySum, 500)
+
+    function delaySum() {
+        const countTip = parseFloat(price.value) * (parseInt(tip.value) / 100);
+        resultPlaceTip.textContent = countTip.toFixed(2);
+        resultPlaceTip.style.color = 'black'
     
-    resultPlaceTip.textContent = countTip.toFixed(2);
-
-    const countBill = parseFloat(price.value) + countTip;
-    resultPlaceBill.textContent = countBill.toFixed(2);
-
-   
+        const countBill = parseFloat(price.value) + countTip;
+        resultPlaceBill.textContent = countBill.toFixed(2);
+        resultPlaceBill.style.color = 'black'
+    } 
 
 });
+
