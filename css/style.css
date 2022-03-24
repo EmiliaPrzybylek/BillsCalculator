@@ -54,7 +54,7 @@ table {
 body {
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(500deg, #014040, #168C61, #014040, #001f1f, black);
+    background: linear-gradient(540deg, #014040, #137953, #014040, #001f1f, black);
     overflow: hidden;
 }
 
