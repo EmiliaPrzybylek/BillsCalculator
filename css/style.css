@@ -140,6 +140,9 @@ body {
     cursor: pointer;
 }
 
+.result-text {
+    display: none;
+}
 .error-price, .error-tip {
     display: none;
 }
