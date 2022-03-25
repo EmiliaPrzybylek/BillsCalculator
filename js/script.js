@@ -28,11 +28,10 @@ form.addEventListener('submit', (e) => {
 
         const countTip = parseFloat(price.value) * (parseInt(tip.value) / 100);
         resultPlaceTip.textContent = countTip.toFixed(2);
-        resultPlaceTip.style.color = 'black'
     
         const countBill = parseFloat(price.value) + countTip;
         resultPlaceBill.textContent = countBill.toFixed(2);
-        resultPlaceBill.style.color = 'black'
+        
     } 
 
 });

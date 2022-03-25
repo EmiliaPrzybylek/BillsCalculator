@@ -143,11 +143,13 @@ body {
 .result-box {
     padding-top: 15px;
     text-align: center;
-    display: none;
+    /* display: none; */
 }
 
 .result-tip, .result-bill {
     padding: 15px;
+    font-size: 25px;
+    color: rgba(201, 5, 5, 0.425);
 }
 
 .error-price, .error-tip {
