@@ -149,13 +149,14 @@ body {
 .result-tip, .result-bill {
     padding: 15px;
     font-size: 25px;
-    color: rgba(201, 5, 5, 0.425);
+    color: black;
 }
 
 .error-price, .error-tip {
     display: none;
     padding-top: 15px;
     text-align: center;
+    color: rgba(201, 5, 5, 0.425);
 }
 
 .copyright {
