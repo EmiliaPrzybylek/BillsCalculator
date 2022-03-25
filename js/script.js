@@ -13,8 +13,6 @@ const errorPlaceTip = document.querySelector('.error-tip')
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    
-
     const delayResult = setTimeout(delaySum, 400)
     function delaySum() {
 

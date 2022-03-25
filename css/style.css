@@ -141,8 +141,15 @@ body {
 }
 
 .result-box {
+    padding-top: 15px;
+    text-align: center;
     display: none;
 }
+
+.result-tip, .result-bill {
+    padding: 15px;
+}
+
 .error-price, .error-tip {
     display: none;
 }
