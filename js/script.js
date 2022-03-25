@@ -6,8 +6,9 @@ const tip = document.querySelector('#tip');
 const resultPlaceBill = document.querySelector('.result-bill');
 const resultPlaceTip = document.querySelector('.result-tip');
 const resultText = document.querySelector('.result-box');
-const errorPlacePrice = document.querySelector('.error-price')
-const errorPlaceTip = document.querySelector('.error-tip')
+const errorPlacePrice = document.querySelector('.error-price');
+const errorPlaceTip = document.querySelector('.error-tip');
+const resetCalc = document.querySelector('.reset');
 
 
 form.addEventListener('submit', (e) => {
@@ -35,6 +36,11 @@ form.addEventListener('submit', (e) => {
     } 
 
 });
+
+form.addEventListener('reset', () => {
+    resultText.style.display = 'none'
+})
+
 
 
 
