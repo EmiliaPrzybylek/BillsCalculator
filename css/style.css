@@ -132,7 +132,7 @@ body {
 }
 
 .buttons button, .reset {
-    width: 100px;
+    width: 150px;
 }
 
 .buttons button:hover, .reset:hover {
@@ -160,7 +160,7 @@ body {
 }
 
 .copyright {
-    margin: 20px;
+    padding: 20px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: end;
     color: #168C61;

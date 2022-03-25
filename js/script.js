@@ -10,8 +10,6 @@ const errorPlacePrice = document.querySelector('.error-price');
 const errorPlaceTip = document.querySelector('.error-tip');
 const resetCalc = document.querySelector('.reset');
 
-
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
