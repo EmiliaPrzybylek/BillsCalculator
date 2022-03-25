@@ -11,35 +11,51 @@ const errorPlaceTip = document.querySelector('.error-tip');
 const resetCalc = document.querySelector('.reset');
 
 
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const delayResult = setTimeout(delaySum, 400)
+    const delayResult = setTimeout(delaySum, 300);
     function delaySum() {
 
-        if(price.value == '') {
-            errorPlacePrice.style.display = "block";
-            resultPlaceBill.style.display = 'none'
-        } if(tip.value == '') {
+    const countTip = parseFloat(price.value) * (parseInt(tip.value) / 100);
+    const countBill = parseFloat(price.value) + countTip;
+    resultPlaceTip.textContent = countTip.toFixed(1);
+    resultPlaceBill.textContent = countBill.toFixed(2);
+
+        if (price.value != '' && tip.value == '') {
             errorPlaceTip.style.display = "block";
-            resultPlaceTip.style.display = 'none'
-        } if(price.vaule != '' && tip.value != ''){
-            resultText.style.display = 'block'
+            errorPlacePrice.style.display = "none";
+            resultText.style.display = 'none';
+        }
+        if(price.value == '' && tip.value != '') {
+            errorPlaceTip.style.display = "none";
+            errorPlacePrice.style.display = "block";
+            resultText.style.display = 'none';
+        }
+        if(price.value == '' && tip.value == '') {
+            errorPlacePrice.style.display = 'block';
+            errorPlaceTip.style.display = 'block';
+            resultText.style.display = 'none';
+        }
+        if(price.value != '' && tip.value != '') {
+            errorPlacePrice.style.display = 'none';
+            errorPlaceTip.style.display = 'none';
+            resultText.style.display = 'block';
         }
 
-        const countTip = parseFloat(price.value) * (parseInt(tip.value) / 100);
-        resultPlaceTip.textContent = countTip.toFixed(2);
-    
-        const countBill = parseFloat(price.value) + countTip;
-        resultPlaceBill.textContent = countBill.toFixed(2);
-        
-    } 
-
+    }
+ 
 });
 
-form.addEventListener('reset', () => {
-    resultText.style.display = 'none'
+resetCalc.addEventListener('click', () => {
+    resultText.style.display = 'none';
+    errorPlacePrice.style.display = "none";
+    errorPlaceTip.style.display = "none";
 })
+
+
+    
 
 
 

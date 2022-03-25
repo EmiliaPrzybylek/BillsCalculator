@@ -141,9 +141,9 @@ body {
 }
 
 .result-box {
+    display: none;
     padding-top: 15px;
     text-align: center;
-    display: none;
 }
 
 .result-tip, .result-bill {
@@ -154,6 +154,8 @@ body {
 
 .error-price, .error-tip {
     display: none;
+    padding-top: 15px;
+    text-align: center;
 }
 
 .copyright {
