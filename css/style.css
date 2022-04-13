@@ -141,7 +141,7 @@ body {
 }
 
 .result-box {
-    display: none;
+    visibility: hidden;
     padding-top: 15px;
     text-align: center;
     text-transform: lowercase;

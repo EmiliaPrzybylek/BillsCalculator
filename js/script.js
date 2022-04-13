@@ -26,22 +26,22 @@ form.addEventListener('submit', (e) => {
         if (price.value != '' && tip.value == '') {
             errorPlaceTip.style.visibility = 'visible'
             errorPlacePrice.style.visibility = 'hidden';
-            resultText.style.display = 'none';
+            resultText.style.visibility = 'hidden';
         }
         if(price.value == '' && tip.value != '') {
             errorPlaceTip.style.visibility = "hidden";
             errorPlacePrice.style.visibility = 'visible'
-            resultText.style.display = 'none';
+            resultText.style.visibility = 'hidden';
         }
         if(price.value == '' && tip.value == '') {
             errorPlacePrice.style.visibility = 'visible'
             errorPlaceTip.style.visibility = 'visible';
-            resultText.style.display = 'none';
+            resultText.style.visibility = 'hidden';
         }
         if(price.value != '' && tip.value != '') {
             errorPlacePrice.style.visibility = "hidden";
             errorPlaceTip.style.visibility = "hidden";
-            resultText.style.display = 'block';
+            resultText.style.visibility = 'visible';
         }
 
     }
@@ -49,7 +49,7 @@ form.addEventListener('submit', (e) => {
 });
 
 resetCalc.addEventListener('click', () => {
-    resultText.style.display = 'none';
+    resultText.style.visibility = 'hidden';
     errorPlacePrice.style.visibility = "hidden";
     errorPlaceTip.style.visibility = "hidden";
 })
