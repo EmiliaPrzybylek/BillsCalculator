@@ -50,8 +50,8 @@ form.addEventListener('submit', (e) => {
 
 resetCalc.addEventListener('click', () => {
     resultText.style.display = 'none';
-    errorPlacePrice.style.display = "none";
-    errorPlaceTip.style.display = "none";
+    errorPlacePrice.style.visibility = "hidden";
+    errorPlaceTip.style.visibility = "hidden";
 })
 
 

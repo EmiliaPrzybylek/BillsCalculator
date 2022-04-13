@@ -159,8 +159,7 @@ body {
 
 .error-price, .error-tip {
     visibility: hidden;
-    visibility: ;
-    padding-top: 15px;
+    padding: 15px;
     text-align: center;
     color: rgba(201, 5, 5, 0.425);
 }
