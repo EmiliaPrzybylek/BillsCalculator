@@ -143,6 +143,7 @@ body {
 .result-box {
     visibility: hidden;
     padding-top: 15px;
+    height: 126px;
     text-align: center;
     text-transform: lowercase;
 }
@@ -152,7 +153,7 @@ body {
 }
 
 .result-tip, .result-bill {
-    padding: 15px;
+    padding: 10px;
     font-size: 25px;
     color: rgba(71, 6, 6, 0.712);
 }
@@ -160,8 +161,10 @@ body {
 .error-price, .error-tip {
     visibility: hidden;
     padding: 15px;
+    font-size: 15px;
+    letter-spacing: 3px;
     text-align: center;
-    color: rgba(201, 5, 5, 0.425);
+    color: rgba(184, 3, 3, 0.596);
 }
 
 .copyright {
