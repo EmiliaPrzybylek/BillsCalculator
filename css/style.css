@@ -144,16 +144,22 @@ body {
     display: none;
     padding-top: 15px;
     text-align: center;
+    text-transform: lowercase;
+}
+
+.result-box p {
+    text-transform: uppercase;
 }
 
 .result-tip, .result-bill {
     padding: 15px;
     font-size: 25px;
-    color: black;
+    color: rgba(71, 6, 6, 0.712);
 }
 
 .error-price, .error-tip {
-    display: none;
+    visibility: hidden;
+    visibility: ;
     padding-top: 15px;
     text-align: center;
     color: rgba(201, 5, 5, 0.425);

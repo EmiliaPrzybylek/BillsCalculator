@@ -18,27 +18,29 @@ form.addEventListener('submit', (e) => {
 
     const countTip = parseFloat(price.value) * (parseInt(tip.value) / 100);
     const countBill = parseFloat(price.value) + countTip;
-    resultPlaceTip.textContent = countTip.toFixed(1);
-    resultPlaceBill.textContent = countBill.toFixed(2);
+   
+    resultPlaceTip.textContent = `${countTip.toFixed(2)} zł`;
+    resultPlaceBill.textContent = `${countBill.toFixed(2)} zł`;
+
 
         if (price.value != '' && tip.value == '') {
-            errorPlaceTip.style.display = "block";
-            errorPlacePrice.style.display = "none";
+            errorPlaceTip.style.visibility = 'visible'
+            errorPlacePrice.style.visibility = 'hidden';
             resultText.style.display = 'none';
         }
         if(price.value == '' && tip.value != '') {
-            errorPlaceTip.style.display = "none";
-            errorPlacePrice.style.display = "block";
+            errorPlaceTip.style.visibility = "hidden";
+            errorPlacePrice.style.visibility = 'visible'
             resultText.style.display = 'none';
         }
         if(price.value == '' && tip.value == '') {
-            errorPlacePrice.style.display = 'block';
-            errorPlaceTip.style.display = 'block';
+            errorPlacePrice.style.visibility = 'visible'
+            errorPlaceTip.style.visibility = 'visible';
             resultText.style.display = 'none';
         }
         if(price.value != '' && tip.value != '') {
-            errorPlacePrice.style.display = 'none';
-            errorPlaceTip.style.display = 'none';
+            errorPlacePrice.style.visibility = "hidden";
+            errorPlaceTip.style.visibility = "hidden";
             resultText.style.display = 'block';
         }
 

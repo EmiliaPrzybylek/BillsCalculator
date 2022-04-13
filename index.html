@@ -29,8 +29,12 @@
                 <form>
                     <label for="price">Rachunek do zapłaty:</label>
                     <input type="number" id="price" step="0.01">
+                    <div class="error-price">Wypełnij kwotę rachunku! </div>
+
                     <label for="tip">Wielkość napiwku (w %):</label>
                     <input type="number" id="tip">
+                    <div class="error-tip">Wypełnij kwotę napiwku! </div>
+                    
                     <div class="buttons">
                         <button type="submit">Oblicz</button>
                         <input class="reset" type="reset" value="Reset"><br>
@@ -41,8 +45,8 @@
                         <p>Razem do zapłaty:</p> 
                         <div class="result-bill"></div>
                     </div>
-                    <div class="error-price">Wypełnij kwotę rachunku! </div>
-                    <div class="error-tip">Wypełnij kwotę napiwku! </div>
+                    
+                    
 
                 </form>
             </div>
